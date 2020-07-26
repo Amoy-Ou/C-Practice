@@ -27,6 +27,7 @@ int main() {
 		bn.push_back(ntemp);
 	}
 	int num=0;
+	int exp=-1;
 	while(an.size()>0||bn.size()>0) {
 		if(an.size()>0&&bn.size()>0) {
 			if(an[0]>bn[0]) {
