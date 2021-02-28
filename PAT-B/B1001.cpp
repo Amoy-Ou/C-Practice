@@ -17,24 +17,22 @@
 5
 */
 #include <iostream>
+using namespace std; 
 int main() {
 	int n, steps;
 	n = 0;
 	steps = 0;
-	std::cout << "Please enter a num:" << std::endl;
-	std::cin >> n;
-	if (n > 1000 || n < 1) {
-		return 0;
-	}
+	cout << "Please enter a num:" << endl;
+	cin >> n;
+//	if (n > 1000 || n < 1) {
+//		return 0;
+//	}
 	while (n != 1) {
-		if (n % 2 == 0) {
-			n = n / 2;
-			steps++;
-		} else {
-			n = (3 * n + 1) / 2;
-			steps++;
-		}
+		if(n%2!=0)
+			n = 3 * n + 1;
+		n = n / 2;
+		steps++;
 	}
-	std::cout << steps;
+	cout << steps;
 	return 0;
 }
