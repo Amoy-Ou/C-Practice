@@ -6,11 +6,8 @@
 #include<math.h>
 using namespace std;
 int main() {
-	int a;
-	a=pow(2,31);
-//	a+=1;
-	int b=-a;
-	b-=2;
-	cout <<"a:"<<a<<" b:"<<b;
+	int a=pow(2,30)-1;
+	int b=a;
+	cout <<"a:"<<a<<" b:"<<b<<"a+b"<<a+b;
 	return 0;
 }
