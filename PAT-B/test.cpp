@@ -6,8 +6,8 @@
 #include<math.h>
 using namespace std;
 int main() {
-	int a=pow(2,30)-1;
-	int b=a;
-	cout <<"a:"<<a<<" b:"<<b<<"a+b"<<a+b;
+	int a[10];
+	fill(a, a + 10, 0);
+	cout<<a.end()-a.begin();
 	return 0;
 }
